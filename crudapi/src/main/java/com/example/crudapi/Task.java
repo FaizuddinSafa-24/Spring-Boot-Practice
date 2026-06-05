@@ -27,6 +27,17 @@ public class Task {
         this.completed = completed;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 
     public long getId() {
         return id;

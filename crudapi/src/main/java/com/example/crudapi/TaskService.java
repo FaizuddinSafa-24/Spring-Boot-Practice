@@ -13,16 +13,18 @@ public class TaskService {
     @Autowired
     private TaskRepository taskrepo;
 
+
+
+    public Task createTask(Task task) {
+        return taskrepo.save(task);
+    }
+
     public List<Task> getAllTask() {
         return taskrepo.findAll();
     }
 
     public Optional<Task> getTaskById(Long id) {
         return taskrepo.findById(id);
-    }
-
-    public Task createTask(Task task) {
-        return taskrepo.save(task);
     }
 
     public void deleteTask(Long id) {
