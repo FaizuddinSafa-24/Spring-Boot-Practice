@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private String topic;
 
@@ -21,7 +21,7 @@ public class Task {
     }
 
 
-    public Task(long id, String topic, boolean completed) {
+    public Task(Long id, String topic, boolean completed) {
         this.id = id;
         this.topic = topic;
         this.completed = completed;
@@ -39,7 +39,7 @@ public class Task {
         this.completed = completed;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

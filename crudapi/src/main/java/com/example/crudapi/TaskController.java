@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class TaskController {
@@ -23,7 +22,7 @@ public class TaskController {
     }
 
     @GetMapping("/crudapi/tasks/{id}/")
-    public Optional<Task> getTaskById(@PathVariable Long id) {
+    public Task getTaskById(@PathVariable Long id) {
         return task.getTaskById(id);
     }
 
