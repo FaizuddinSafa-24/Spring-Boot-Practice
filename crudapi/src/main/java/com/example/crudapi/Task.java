@@ -27,30 +27,27 @@ public class Task {
         this.completed = completed;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getTopic() {
+        return topic;
     }
 
     public void setTopic(String topic) {
         this.topic = topic;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-
-    public String getTopic() {
-        return topic;
-    }
-
-
     public boolean isCompleted() {
         return completed;
     }
 
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 }
